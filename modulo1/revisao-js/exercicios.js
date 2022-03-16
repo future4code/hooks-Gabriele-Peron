@@ -40,7 +40,8 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-
+    return Math.max(...array)
+    // Obrigada Helanny por falar para pesquisar sobre Math max e min...hehe
 }
 
 // EXERCÍCIO 07

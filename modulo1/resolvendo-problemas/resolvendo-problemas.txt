@@ -1,0 +1,19 @@
+Resumo 
+1 - Ter atenção no Enunciado
+Importante para entender o que está sendo pedido
+
+2 - Retirar informações Relevantes
+Nem tudo do enunciado precisa ser feito, facilita apenas o que for relevante
+
+3 - Pensar Entradas e saidas
+importante para estruturar o codigo
+
+4 - Fazer um esquema visual
+Fazer diagramas ajuda para termos ideia do que e como temos que fazer
+
+5 - Criar codigo feio
+testar varias logicas e ver qual melhor se encaixa
+6 - Testar força Bruta
+
+7 - Refatorar
+melhorar o código visualmente

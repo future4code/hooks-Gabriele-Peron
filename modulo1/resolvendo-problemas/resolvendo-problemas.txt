@@ -16,4 +16,4 @@ testar varias logicas e ver qual melhor se encaixa
 6 - Testar força Bruta
 
 7 - Refatorar
-melhorar o código visualmente
+melhorar o código visualmente, fazer com o tempo

@@ -99,8 +99,11 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-
+    array = array.sort((a, b) => a - b)
+    let novoArray = [array[array.length - 2], array[1]]
+    return novoArray
 }
+
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
@@ -128,12 +131,12 @@ function retornaPessoasAutorizadas(pessoas) {
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
     let naoAutorizada = []
-    for (let pessoa of pessoas){
-        if (pessoa.altura < 1.5 && pessoa.idade <= 14 && pessoa.idade >= 60) {
+    for (let pessoa of pessoas)
+        if (pessoa.altura < 1.5 || pessoa.idade <= 14 || pessoa.idade >= 60) {
             naoAutorizada.push(pessoa)
         }
     return naoAutorizada
-}
+
 }
 
 // EXERCÍCIO 14
@@ -141,10 +144,16 @@ function retornaContasComSaldoAtualizado(contas) {
 
 }
 
+
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-
+ 
 }
+//não consegui desenvolver uma lógica 
+
+
+
+
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {

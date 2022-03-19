@@ -22,9 +22,24 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-    return array.filter((pares) => {
-        return pares % 2 === 0
+    const soPares = array.filter((pares) => {
+        if (pares % 2 === 0){
+            return pares
+        }
     })
+    return soPares
+
+
+    //DESAFio
+
+    // const arrayPar = []
+    // for (let i = 0; i < array.length; i++) {
+
+    //     if (array[i] % 2 === 0) {
+    //         arrayPar.push(array[i])
+    //     }
+    // }
+    // return arrayPar
 }
 
 // EXERCÍCIO 05
@@ -78,9 +93,9 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
     let array = []
-    for (let total = 0; array.length < n; total++) {
-        if (total % 2 === 0) {
-            array.push(total)
+    for (let pares = 0; array.length < n; pares++) {
+        if (pares % 2 === 0) {
+            array.push(pares)
         }
     }
     return array
@@ -141,21 +156,35 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-
+ //Tentando entender a lógica
 }
 
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
- 
+    const ordena = consultas.sort((a, b) => {
+        if (a.nome < b.nome) {
+            return -1
+        } else {
+            return true
+        }
+    })
+    return ordena
+
+
+    // Pesquisando achei outra forma
+
+    // return consultas.sort((a, b) => {
+    //     return (a.nome > b.nome) ? 1 : ((b.nome > a.nome) ? -1 : 0)
+
+    // });
+
+
 }
-//não consegui desenvolver uma lógica 
-
-
-
 
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-
+  
 }
+

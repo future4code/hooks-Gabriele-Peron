@@ -23,7 +23,7 @@ function retornaArrayOrdenado(array) {
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
     const soPares = array.filter((pares) => {
-        if (pares % 2 === 0){
+        if (pares % 2 === 0) {
             return pares
         }
     })
@@ -156,7 +156,15 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
- //Tentando entender a lógica
+    for (let cliente of contas) {
+        for (let compras of cliente.compras) {
+            cliente.saldoTotal = cliente.saldoTotal - compras
+        }
+        cliente.compras = []
+        return contas
+    }
+
+
 }
 
 
@@ -185,6 +193,6 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-  
+
 }
 

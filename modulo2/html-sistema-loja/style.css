@@ -1,0 +1,47 @@
+.social img {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+  
+}
+body {
+    background-color: rgb(2, 119, 12);
+}
+
+.rodape{
+    color:rgb(255, 255, 255)
+}
+
+p{
+    color:rgb(255, 255, 255)
+}
+
+.boasVindas{
+    color: aliceblue;
+}
+
+.texto {
+    color: aliceblue;
+}
+
+h2{
+    color: aliceblue;
+}
+
+footer{
+    color: aliceblue;
+}
+
+table{
+    color: aliceblue;
+}
+
+.banner img{
+    width: 1080px;
+    height: 200px;
+
+}
+
+ul{
+    color: aliceblue;
+}

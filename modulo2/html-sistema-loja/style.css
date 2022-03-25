@@ -17,7 +17,8 @@ p{
 }
 
 .boasVindas{
-    color: aliceblue;
+    color: rgb(234, 236, 238);
+    
 }
 
 .texto {
@@ -30,10 +31,17 @@ h2{
 
 footer{
     color: aliceblue;
+    display: flex;
+  justify-content: center;
 }
 
 table{
     color: aliceblue;
+    display: flex;
+  justify-content: center;
+  background-color:darkgreen;
+  border-radius: unset;
+
 }
 
 .banner img{
@@ -45,3 +53,17 @@ table{
 ul{
     color: aliceblue;
 }
+div{
+    display: flex;
+  justify-content: center;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	}
+a:hover {text-decoration: underline;
+	color:#000;
+	font-size:150%;
+	}
+
+    

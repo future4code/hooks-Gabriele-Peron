@@ -74,9 +74,13 @@ div img {
 
 #container-de-descricao>ol {
     padding: 15px;
-    padding-right: auto;
-    padding-left: auto;
+   
 }
+
+li{
+    list-style-position:inside;
+}
+/*referencia https://www.maujor.com/tutorial/propriedades-css-para-estilizacao-de-listas.php*/
 
 #container-para-comprar {
     background-color: #e7eb90;

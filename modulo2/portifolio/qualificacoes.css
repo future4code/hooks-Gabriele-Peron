@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(168, 206, 255);
+    font-family: Roboto;
+    
+}
+
+
+
+
+#menu{
+    display: flex;
+    background-color: rgb(168, 206, 255);
+    color: white;
+    font-size: 20px;
+    margin-left: 340px;
+    margin-top: -230px;  
+}
+
+#menu li{
+    text-decoration: none;
+    font-size:larger;
+    display: block;
+    padding: 50px;
+    margin-right: auto;
+}
+
+footer {
+    height: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 77, 173);
+    align-self: flex-end;
+    
+  
+    text-align: right;
+    color: rgb(184, 206, 252);
+    font-size: 20px;
+  }

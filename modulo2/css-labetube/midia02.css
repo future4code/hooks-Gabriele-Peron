@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: rgb(13, 77, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  grid-column: 1 / -1;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+p {
+  font-family: "Anton", sans-serif;
+  padding: 10px;
+  font-size: 40px;
+  color: rgb(2, 223, 13);
+}
+
+#divBusca {
+  grid-auto-columns: auto;
+  background-color: rgb(2, 223, 13);
+  border: solid 1px;
+  border-radius: 15px;
+  width: 300px;
+}
+
+#txtBusca {
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+
+img{
+    width: 20px;
+}
+
+h3{
+    color: rgb(13, 77, 0)
+}
+
+video {
+  max-width: 145vh;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(13, 77, 0);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+footer h1 {
+  color: rgb(2, 223, 13);
+  margin: auto;
+}

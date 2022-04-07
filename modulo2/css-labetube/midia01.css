@@ -3,21 +3,12 @@
   padding: 0px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 10vh 80vh 10vh;
-}
-
 header {
   background-color: rgb(13, 77, 0);
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  grid-column: 1 / -1;
-  grid-column-start: 1;
-  grid-column-end: -1;
 }
 
 p {
@@ -45,15 +36,16 @@ p {
   width: 260px;
 }
 
-img{
-    width: 20px;
+#divBusca img {
+  width: 20px;
 }
-
-h3{
-    color: rgb(13, 77, 0)
+h3 {
+  text-align: center;
+  color: rgb(13, 77, 0);
 }
 
 video {
+  margin: 20px;
   max-width: 145vh;
   align-items: center;
 }
@@ -61,11 +53,32 @@ video {
 footer {
   text-align: center;
   background-color: rgb(13, 77, 0);
-  grid-column-start: 1;
-  grid-column-end: 3;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 footer h1 {
   color: rgb(2, 223, 13);
   margin: auto;
+}
+
+@media screen and (min-device-width: 320px) and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  main div {
+    display: flex;
+    flex-direction: column;
+    padding: 10;
+  }
+
+  footer {
+    padding-right: 98px;
+    position: fixed;
+    width: 100%;
+  }
 }

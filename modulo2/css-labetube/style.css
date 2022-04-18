@@ -3,21 +3,15 @@
   padding: 0px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 4fr 4fr;
-  grid-template-rows: 10vh 80vh 10vh;
-}
 
 header {
   background-color: rgb(13, 77, 0);
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  grid-column: 1 / -1;
-  grid-column-start: 1;
-  grid-column-end: -1;
+  
+
 }
 
 p {
@@ -35,7 +29,7 @@ p {
   width: 300px;
 }
 
-img{
+#divBusca img{
     width: 20px;
 }
 
@@ -50,13 +44,12 @@ img{
 }
 
 main {
-  background-color: rgb(255, 255, 255);
+  margin: 10px ;
+  width: 98vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 20px;
-  column-gap: 20px;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  row-gap: 30px;
+  justify-items: center;
   
 }
 
@@ -64,19 +57,22 @@ h3{
     color: rgb(13, 77, 0);
 }
 
-.card {
+div img {
   width: 100%;
-  margin: 5px;
+  height: 100%;
+}
+
+main div{
+  height: 30vw;
   text-align: center;
   box-shadow: 1px 1px 1px 3px rgb(2, 122, 22);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
 }
 
-.card img {
-  width: 100%;
-}
 
 h3 {
   text-align: center;
@@ -84,13 +80,56 @@ h3 {
 }
 
 footer {
+  display: flex;
+  width: 100%;
   text-align: center;
   background-color: rgb(13, 77, 0);
-  grid-column-start: 1;
-  grid-column-end: 3;
+  justify-content: center;
+  bottom: 0;
+
+ 
 }
 
 footer h1 {
   color: rgb(2, 223, 13);
   margin: auto;
 }
+
+@media screen and (min-device-width:320px) and (max-width: 480px) {
+ header{
+  display: flex;
+  flex-direction:column ;
+  padding: 50px;
+ }
+ 
+  main {
+      width: 80vw;
+      display: flex;
+      flex-direction:column ;
+      padding: 50px;
+  }
+  
+  main div{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+  div img{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: auto;
+    padding: 1px;
+   
+  }
+  
+  footer{
+    padding-right: 98px;
+  }
+}
+
+
+  
+

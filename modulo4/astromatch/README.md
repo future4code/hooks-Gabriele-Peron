@@ -25,3 +25,8 @@ https://gabi-astromatch.surge.sh/
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/98039897/173261617-f0fbeb0b-0974-434d-afe5-72dd8a675d8c.png)
+
+![image](https://user-images.githubusercontent.com/98039897/173261728-de08a798-00a4-46bf-9b0b-bc02f3a025bd.png)
+
+

@@ -17,8 +17,8 @@ return(
     </div>
     <ContainerButtons>
 
-    <Buttons onClick={()=> goToLogin (navigate)}><BiLogInCircle size={50} color="white"/>AREA ADM</Buttons>
-    <Buttons onClick={()=> goToTrips (navigate)}><GiSpaceShuttle  size={50} color="white" /> VER VIAGENS</Buttons>
+    <Buttons onClick={()=> goToLogin (navigate)}><BiLogInCircle size={50} color="#fff"/>AREA ADM</Buttons>
+    <Buttons onClick={()=> goToTrips (navigate)}><GiSpaceShuttle  size={50} color="#fff" /> VER VIAGENS</Buttons>
     </ContainerButtons>
   </ContainerHome>
 )

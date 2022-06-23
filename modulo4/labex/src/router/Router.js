@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from '../pages/HomePage/HomePage'
-import ListTripPage from '../pages/ListTripsPage/ListTripsPage'
+import ListTripsPage from '../pages/ListTripsPage/ListTripsPage'
 import AdminPage from '../pages/AdminHomePage'
 import LoginPage from '../pages/LoginPage/LoginPage'
 import ApplicationFormPage from '../pages/ApplicationFormPage'
@@ -15,9 +15,9 @@ function Router () {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="login" element={<LoginPage />} />
-        <Route path="listTrips" element={<ListTripPage />} />
+        <Route path="listTrips" element={<ListTripsPage />} />
         <Route
-          path="listTrips/applicationToTrip"
+          path="/listTrips/application"
           element={<ApplicationFormPage />}
         />
         <Route path="login/adminPage" element={<AdminPage />} />

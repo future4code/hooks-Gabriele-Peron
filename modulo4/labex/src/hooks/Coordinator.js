@@ -8,8 +8,10 @@ export const login = (navigate) => {navigate("login")}
 
 export const listTripPage = (navigate) => {navigate("listTrip")}
 
-export const applicationToTrip = (navigate) => {navigate("applicationToTrip")}
+
 
 export const adminPage = (navigate) => {navigate("adminPage")}
 
 export const goHome = (navigate) => {navigate("/")}
+
+export const goToApplicationFormPage = (navigate) => {navigate("application")}

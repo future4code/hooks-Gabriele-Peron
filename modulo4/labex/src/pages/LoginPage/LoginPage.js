@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { ContainerHome } from '../HomePage/HomePageStyled'
-import { goBack } from '../../hooks/Coordinator'
+import { adminPage, goBack } from '../../hooks/Coordinator'
 import { LoginBox, Button } from './LoginPageStyled'
 import { useState } from 'react'
 import axios from 'axios'
@@ -31,7 +31,7 @@ const LoginPage = () => {
     axios.post (`${URL}/login`, body)
     .then((res)=>{
       localStorage.setItem("token", res.data.token)
-      navigate("/login/adminPage/detailPage")
+      adminPage(navigate)
     })
     .catch((error)=>{
       alert ("Usuário ou senha incorretos")

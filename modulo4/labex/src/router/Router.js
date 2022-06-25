@@ -22,7 +22,7 @@ function Router () {
         />
         <Route path="login/adminPage" element={<AdminPage />} />
         <Route path="login/adminPage/createTrip" element={<CreateTripPage />} />
-        <Route path="login/adminPage/detailPage" element={<TripDetailsPage />} />
+        <Route path="login/adminPage/detailPage/:id" element={<TripDetailsPage />} />
         <Route path='*' element={<ErrorPage/>} />
       </Routes>
     </BrowserRouter>

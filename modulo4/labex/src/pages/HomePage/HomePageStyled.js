@@ -15,7 +15,6 @@ export const Logo = styled.img`
   width: 400px;
   margin-top: 40px;
   margin-left: 60px;
- 
 `
 
 export const ContainerButtons = styled.div`

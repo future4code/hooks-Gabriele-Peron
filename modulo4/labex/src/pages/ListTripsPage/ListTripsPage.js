@@ -1,33 +1,43 @@
 import { useNavigate } from 'react-router-dom'
-import { Box } from './ListTripsPageStyled'
-import { goHome, applicationToTrip } from '../../hooks/Coordinator'
+import { goHome } from '../../router/Coordinator'
+import { useRequestData } from '../../hooks/UseRequestData'
 import {
-  ContainerButtons,
-  Buttons,
-  ContainerHome
-} from '../HomePage/HomePageStyled'
-import { AiOutlineHome } from 'react-icons/ai'
-
+  ContainerListTrips,
+  ListRender,
+  ButtonHome,
+  Loading
+} from './ListTripsPageStyled'
+import { CardTrips } from './CardTrips'
 
 const ListTripsPage = () => {
-  
   const navigate = useNavigate()
 
-  return (
-    <ContainerHome>
-      <Box>
-        <img src="https://i.pinimg.com/736x/41/e9/c7/41e9c7d1acfd54fd8aad425a3aca5a5a.jpg" />
-        <p>CSS</p>
-        <img src="https://assets.catawiki.nl/assets/2020/1/19/8/d/1/8d1031d3-915e-4b7f-a1fd-676d49756748.jpg" />
-        <p>CSS</p>
+  const [listTrips, setListTrips, isLoading] = useRequestData(`/trips`, {})
 
-        <ContainerButtons>
-          <Buttons onClick={() => goHome(navigate)}><AiOutlineHome size={50} color="#fff" />
-                        HOME
-          </Buttons>
-        </ContainerButtons>
-      </Box>
-    </ContainerHome>
+  const renderedTripsList =
+    listTrips.trips &&
+    listTrips.trips.map(trip => {
+      return (
+        <CardTrips
+          id={trip.id}
+          name={trip.name}
+          description={trip.description}
+          planet={trip.planet}
+          durationInDays={trip.durationInDays}
+          date={trip.date}
+        />
+      )
+    })
+
+  return (
+    <ContainerListTrips>
+      {isLoading ? (
+        <Loading></Loading>
+      ) : (
+        <ListRender>{renderedTripsList}</ListRender>
+      )}
+      <ButtonHome onClick={() => goHome(navigate)}>home</ButtonHome>
+    </ContainerListTrips>
   )
 }
 

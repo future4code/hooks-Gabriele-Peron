@@ -12,3 +12,16 @@ height: 100vh;
 `
 
 export const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/gabriele-peron-hooks"
+
+
+export const planets=[
+  "Mercúrio",
+  "VÊnus",
+  "Terra",
+  "Marte",
+  "Jupter",
+  "Saturno",
+  "Urano",
+  "Netuno",
+  "Plutão"
+]

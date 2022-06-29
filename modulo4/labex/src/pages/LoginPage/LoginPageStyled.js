@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Background from '../../img/back2.gif'
 
 export const LoginBox = styled.div`
   position: absolute;
@@ -34,7 +35,7 @@ export const LoginBox = styled.div`
     outline: none;
     background: transparent;
 
-    ::placeholder{
+    ::placeholder {
       color: #fff;
     }
   }

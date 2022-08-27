@@ -1,0 +1,18 @@
+
+
+###
+GET http://localhost:3003/users?name
+###
+GET http://localhost:3003/users
+
+###
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+  "id": 1237374,
+  "name": "sry8888uwdu",
+  "age": 9,
+  "account": 42388872
+}
+
